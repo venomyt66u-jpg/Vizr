@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIZR — 3333 machines, fully on chain</title>
+<meta name="description" content="VIZR is 3333 mining rigs and money printers, drawn as animated pixel machines and stored entirely on chain. Mint today, 4PM UTC.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <div class="nav-mark" data-vzt="VIZR" data-track="1"></div>
+    <div class="nav-live"><span class="dot"></span><span id="navstate">MINT TODAY · 16:00 UTC</span></div>
+    <div class="nav-links">
+      <a href="#machines">Machines</a>
+      <a href="#rarity">Rarity</a>
+      <a href="#traits">Traits</a>
+      <a href="#chain">On Chain</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================================================== HERO ============ -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">3333 machines · fully on chain</span>
+      <h1 class="t-xl" data-vzt="VIZR"></h1>
+      <p class="sub">Rigs that print. Printers that mine.</p>
+      <p class="lede">
+        Twenty machines, drawn pixel by pixel and rendered by a generator we
+        wrote from scratch — no stock parts, no layered PNGs bought off a shelf.
+        Fans spin, terminals scroll, furnaces burn and cash falls out of the
+        slot. <strong>Every frame lives in the contract.</strong> No IPFS pin to
+        expire, no server to go quiet, no folder anyone can swap out later.
+      </p>
+      <img class="hero-art" src="img/hero.gif" alt="A VIZR mining farm, animated" style="margin-top:36px">
+    </div>
+
+    <aside class="mint" id="mint">
+      <div class="mint-head"><span>Public mint opens</span><b id="mintday">TODAY</b></div>
+      <div class="clock" id="clock">
+        <div class="unit"><div class="num" id="d">--</div><div class="lbl">Days</div></div>
+        <div class="unit"><div class="num" id="h">--</div><div class="lbl">Hrs</div></div>
+        <div class="unit"><div class="num" id="m">--</div><div class="lbl">Min</div></div>
+        <div class="unit"><div class="num" id="s">--</div><div class="lbl">Sec</div></div>
+      </div>
+      <div class="mint-rows">
+        <div><span>Supply</span><b>3,333</b></div>
+        <div><span>Price</span><b>0.0088 ETH</b></div>
+        <div><span>Max / wallet</span><b>5</b></div>
+        <div><span>Allowlist</span><b>15:00 UTC · 1 hr early</b></div>
+        <div><span>Public</span><b>16:00 UTC</b></div>
+        <div><span>Storage</span><b>100% on chain</b></div>
+        <div><span>Royalty</span><b>5%</b></div>
+      </div>
+      <button class="btn" id="mintbtn" disabled>Mint opens in --:--:--</button>
+      <p class="mint-note" id="mintnote">Connect at 16:00 UTC. No pre-sale, no private round.</p>
+    </aside>
+  </div>
+</header>
+
+<div class="wrap"><div class="stats panel" style="box-shadow:none">
+  <div class="cell"><div class="k">3,333</div><div class="v">Total supply</div></div>
+  <div class="cell"><div class="k">20</div><div class="v">Machine builds</div></div>
+  <div class="cell"><div class="k">67</div><div class="v">Legendary units</div></div>
+  <div class="cell"><div class="k">100%</div><div class="v">Stored on chain</div></div>
+</div></div>
+
+<!-- ================================================== MACHINES =========== -->
+<section id="machines">
+  <div class="wrap">
+    <span class="tag">The line-up</span>
+    <h2 class="t-lg" data-vzt="TWENTY BUILDS"></h2>
+    <p class="lede">
+      Every machine is a different silhouette, because at thumbnail size the
+      outline is the only thing doing any work. A USB stick and a foundry should
+      never be confused at 40 pixels. Each one animates on its own logic — the
+      furnace burns, the tank bubbles, the press stamps, the mint prints.
+    </p>
+    <div class="machines" id="machgrid" style="margin-top:44px"></div>
+  </div>
+</section>
+
+<!-- ==================================================== RARITY =========== -->
+<section id="rarity">
+  <div class="wrap">
+    <span class="tag">Distribution</span>
+    <h2 class="t-lg" data-vzt="FIVE TIERS"></h2>
+    <p class="lede">
+      Rarity is assigned by tier, not by an arbitrary weight per machine — so
+      what you hold is a thing you can name, not a percentile you have to look
+      up. Supply was fixed per tier before generation, and the generator filled
+      each quota exactly.
+    </p>
+    <div class="tiers" id="tiergrid" style="margin-top:44px"></div>
+  </div>
+</section>
+
+<!-- ==================================================== TRAITS =========== -->
+<section id="traits">
+  <div class="wrap">
+    <span class="tag">Beyond the build</span>
+    <h2 class="t-lg" data-vzt="EIGHT LAYERS"></h2>
+    <p class="lede">
+      Machine and tier are two of eight. The rest decide what your rig is made
+      of, what colour it burns, whether it prints and how hard it has been run.
+      All 3,333 combinations are unique.
+    </p>
+    <div class="traits" style="margin-top:44px">
+      <div class="tcard">
+        <h4>Output</h4>
+        <ul>
+          <li><span>None</span><b>2,751</b></li>
+          <li><span>Bills</span><b>256</b></li>
+          <li><span>Coins</span><b>239</b></li>
+          <li><span>Cards</span><b>87</b></li>
+        </ul>
+      </div>
+      <div class="tcard">
+        <h4>Wear</h4>
+        <ul>
+          <li><span>Clean</span><b>1,490</b></li>
+          <li><span>Scuffed</span><b>1,167</b></li>
+          <li><span>Rusted</span><b>676</b></li>
+        </ul>
+      </div>
+      <div class="tcard">
+        <h4>Cables</h4>
+        <ul>
+          <li><span>Few</span><b>1,462</b></li>
+          <li><span>Messy</span><b>1,090</b></li>
+          <li><span>None</span><b>781</b></li>
+        </ul>
+      </div>
+      <div class="tcard">
+        <h4>LED</h4>
+        <ul>
+          <li><span>Green</span><b>722</b></li>
+          <li><span>Amber</span><b>630</b></li>
+          <li><span>Cyan</span><b>541</b></li>
+          <li><span>Pink</span><b>153</b></li>
+        </ul>
+      </div>
+      <div class="tcard">
+        <h4>Chassis</h4>
+        <ul>
+          <li><span>Steel</span><b>509</b></li>
+          <li><span>Gunmetal</span><b>462</b></li>
+          <li><span>Carbon</span><b>398</b></li>
+          <li><span>Brass</span><b>86</b></li>
+        </ul>
+      </div>
+      <div class="tcard">
+        <h4>Background</h4>
+        <ul>
+          <li><span>Server Grey</span><b>515</b></li>
+          <li><span>Deep Navy</span><b>499</b></li>
+          <li><span>Vault</span><b>430</b></li>
+          <li><span>Gold Vault</span><b>118</b></li>
+        </ul>
+      </div>
+      <div class="tcard">
+        <h4>Frames</h4>
+        <ul>
+          <li><span>Per token</span><b>8</b></li>
+          <li><span>Loop</span><b>0.88 s</b></li>
+          <li><span>Native grid</span><b>128 px</b></li>
+          <li><span>Output</span><b>768 px</b></li>
+        </ul>
+      </div>
+      <div class="tcard">
+        <h4>Rules</h4>
+        <ul>
+          <li><span>Coherence filters</span><b>7</b></li>
+          <li><span>Duplicate tokens</span><b>0</b></li>
+          <li><span>Team allocation</span><b>0</b></li>
+          <li><span>Hidden traits</span><b>0</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== CHAIN =========== -->
+<section id="chain">
+  <div class="wrap">
+    <span class="tag">Permanence</span>
+    <h2 class="t-lg" data-vzt="ON CHAIN"></h2>
+    <div class="chain" style="margin-top:44px">
+      <div class="half">
+        <h3>What that actually means</h3>
+        <p class="lede" style="margin-top:12px">
+          Most collections that say "on chain" store a URL on chain. The picture
+          lives somewhere else, and somewhere else can stop paying its bill.
+        </p>
+        <p class="lede">
+          VIZR stores the <strong>renderer</strong>. The contract holds the trait
+          table and the drawing routine; <code>tokenURI</code> executes it and
+          returns the animation as a data URI. Nothing is fetched, nothing is
+          pinned, nothing is hosted. Delete this website and every token still
+          renders exactly as it does today.
+        </p>
+        <p class="lede">
+          It is only possible because the art was built as code from the first
+          line — 128-pixel grid, indexed palette, eight frames. That is a
+          constraint we chose up front precisely so this ending would be
+          available.
+        </p>
+      </div>
+      <div class="half">
+        <h3>tokenURI</h3>
+        <div class="code"><span class="c">// no ipfs://, no https://, no gateway</span>
+<span class="k">function</span> tokenURI(<span class="k">uint256</span> id)
+    <span class="k">public view returns</span> (<span class="k">string memory</span>)
+{
+    Traits <span class="k">memory</span> t = _decode(seedOf[id]);
+    <span class="k">return</span> string.concat(
+        <span class="s">"data:application/json;base64,"</span>,
+        Base64.encode(
+            _json(t, Renderer.draw(t))
+        )
+    );
+}</div>
+        <div class="mint-rows" style="margin-top:24px">
+          <div><span>Contract</span><b>ERC-721</b></div>
+          <div><span>Metadata</span><b>data: URI</b></div>
+          <div><span>Image</span><b>data: URI</b></div>
+          <div><span>External deps</span><b>none</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= FAQ =========== -->
+<section id="faq">
+  <div class="wrap">
+    <span class="tag">Questions</span>
+    <h2 class="t-lg" data-vzt="FAQ"></h2>
+    <div class="faq" style="margin-top:44px">
+      <details class="q" open>
+        <summary>When does it mint?</summary>
+        <p>Allowlist opens at 15:00 UTC and runs for one hour. Public opens at
+        16:00 UTC and stays open until supply is gone. The counter at the top of
+        this page is the source of truth and runs off your own clock.</p>
+      </details>
+      <details class="q">
+        <summary>Is there a pre-sale or private round?</summary>
+        <p>No. There is no seed round, no private allocation and no team supply.
+        Every one of the 3,333 goes through the same two windows at the same
+        price.</p>
+      </details>
+      <details class="q">
+        <summary>What makes a Legendary?</summary>
+        <p>Two machines only — Gold Foundry and The Mint — capped at 67 units
+        between them. Gold Foundry is the tightest at 20. They are not
+        recoloured commons; they are separate builds with their own animation.</p>
+      </details>
+      <details class="q">
+        <summary>Why animated, and why so small?</summary>
+        <p>The 128-pixel grid is not nostalgia, it is what makes full on-chain
+        storage affordable. Eight frames of indexed pixels compress to something
+        a contract can hold. A 3D render or a 4K illustration could not go on
+        chain at any sane cost.</p>
+      </details>
+      <details class="q">
+        <summary>Can traits be changed after mint?</summary>
+        <p>No. The trait table and renderer are deployed with the contract. There
+        is no admin function to reassign a trait, swap art or reveal something
+        different later.</p>
+      </details>
+      <details class="q">
+        <summary>What about royalties?</summary>
+        <p>5%, declared via EIP-2981. Marketplaces choose whether to honour it;
+        we have no way to force that and will not pretend otherwise.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="mark" data-vzt="VIZR"></div>
+      <p class="fine">
+        VIZR is an art project. NFTs are speculative and can go to zero. Nothing
+        here is financial advice or an offer of securities. Mint times are shown
+        in UTC; the countdown reads from your device clock.
+      </p>
+    </div>
+    <div class="links">
+      <a href="#machines">Machines</a>
+      <a href="#rarity">Rarity</a>
+      <a href="#chain">On Chain</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </div>
+</footer>
+
+<script src="vizrface.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
